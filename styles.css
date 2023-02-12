@@ -19,7 +19,10 @@ input {
   display: flex;
   align-items: center;
   width: 20%;
-  
+}
+
+span{
+  background-color: transparent;
 }
 
 .heading {
@@ -58,6 +61,7 @@ input {
 
 #add{
   background-color: #56C854;
+  vertical-align: baseline;
 }
 
 #delete{
