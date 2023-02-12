@@ -29,3 +29,18 @@
   background-color: #AFD7FA;
   color: #fff;
 }
+
+.source {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.source > *{
+  background-color: white;
+}
+
+.nav__text {
+  border-radius: 0px;
+}
