@@ -1,19 +1,31 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Figtree', sans-serif;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F1F1F1;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  
 }
 
 .heading {
   text-align: center;
-  background-color: aqua;
+  color: #36476D;
 }
 
 .nav {
   display: flex;
+  background-color: #AFD7FA;
 }
 
 .nav__text {
   margin-right: auto;
+  color: #36476D;
+  background-color: #AFD7FA;
+  color: #fff;
 }
