@@ -54,7 +54,6 @@ input {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  align: right;
 }
 
 #add{
@@ -63,4 +62,19 @@ input {
 
 #delete{
   background-color: #FF7676;
+}
+
+.source {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.source > *{
+  background-color: white;
+}
+
+.nav__text {
+  border-radius: 0px;
 }
