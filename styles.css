@@ -28,13 +28,20 @@ span{
 .heading {
   text-align: center;
   color: #36476D;
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+  font-weight: 700;
 }
 
 .nav__container{
   display: flex;
   background-color: #AFD7FA;
-  border-radius: 15px;
+  border-radius: 25px;
   justify-content: space-between;
+  margin: 15px;
+  border: solid;
+  border-color: #36476D;
+  border-width: 1px;
 }
 
 .nav{
@@ -46,6 +53,7 @@ span{
   margin-right: auto;
   background-color: #AFD7FA;
   color: #fff;
+  font-weight: 500;
 }
 
 .button{
@@ -56,7 +64,8 @@ span{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 #add{
@@ -71,14 +80,24 @@ span{
 .source {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
   border-radius: 25px;
+  margin: 15px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #36476D;
 }
 
 .source > *{
   background-color: white;
 }
 
-.nav__text {
-  border-radius: 0px;
+.source_number{
+  font-weight: 700;
 }
+
+.source_email{
+  font-weight: 300;
+}
+
