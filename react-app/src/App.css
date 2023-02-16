@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F1F1F1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  border: hidden;
+  background-color: #eee;
+  width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.no-outline:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logo{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+span{
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  text-align: center;
+  color: #36476D;
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+  font-weight: 700;
 }
+
+.nav__container{
+  display: flex;
+  background-color: #AFD7FA;
+  border-radius: 25px;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.nav{
+  display: flex;
+  background-color: #AFD7FA;
+}
+
+.nav__text {
+  margin-right: auto;
+  background-color: #AFD7FA;
+  color: #fff;
+  font-weight: 500;
+}
+
+.button{
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 70%;
+  margin-top: 15px;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+#add{
+  background-color: #56C854;
+  vertical-align: baseline;
+}
+
+#delete{
+  background-color: #FF7676;
+}
+
+.source {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  margin: 15px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #36476D;
+}
+
+.source_name {
+  font-weight: 500;
+  background-color: white;
+  flex: 1;
+  margin: auto 1rem;
+  line-height: 1rem;
+}
+
+.source_number{
+  font-weight: 700;
+  background-color: white;
+  margin: auto 1rem;
+  line-height: 1rem;
+}
+
+.source_email{
+  font-weight: 300;
+  background-color: white;
+  flex: 2;
+  margin: auto 1rem;
+  line-height: 1rem;
+}
+
