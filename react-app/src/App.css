@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap);
+
 * {
   box-sizing: border-box;
   margin: 10px;
@@ -51,7 +53,7 @@ span{
   margin-right: auto;
   background-color: #AFD7FA;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .button{
@@ -63,7 +65,7 @@ span{
   text-decoration: none;
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   height: 70%;
   margin-top: 15px;
 }
@@ -94,23 +96,26 @@ span{
 }
 
 .source_name {
-  font-weight: 500;
+  font-weight: 600;
   background-color: white;
   flex: 1;
   margin: auto 1rem;
   line-height: 1rem;
+  align-items: center;
+  text-align: center;
 }
 
 .source_number{
-  font-weight: 700;
+  font-weight: 900;
   background-color: white;
   margin: auto 1rem;
   line-height: 1rem;
 }
 
 .source_email{
-  font-weight: 300;
+  font-weight: 400;
   background-color: white;
+  color: #828EA6;
   flex: 2;
   margin: auto 1rem;
   line-height: 1rem;
