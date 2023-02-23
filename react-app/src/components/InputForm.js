@@ -1,11 +1,10 @@
-function InputForm()
+function InputForm(list, SetList)
 {
 
     function addSource(source){
       // this is where you will add code to add a source to your list of sources
     }
 
-    //{List[0].listTitle}
     return(
         <div className = "nav__container">
         <span className = "nav__text">Source Name: <input className = "input_field" type="text"></input></span>

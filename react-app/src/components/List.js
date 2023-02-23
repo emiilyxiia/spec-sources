@@ -1,13 +1,13 @@
 import Source from "./Source"
 
-function List({List, setList}) //need to pass List and setList down to source!!
+function List({list, setList})
 {
     let num_entries = 0;
     return(
         <div id = "source_div">
-          <Source num = {++num_entries} source_info = {{name: "Presbo", email: "presbo@columbia.edu"}}/>
-          <Source num = {++num_entries} source_info = {{name: "John Jay Mouse", email: "mouse@columbia.edu"}}/>
-          <Source num = {++num_entries} source_info = {{name: "Water Bottle Man", email: "flipper@columbia.edu"}}/>
+          <Source num = {++num_entries} source_info = {{name: list[0].listName, email: list[0].listEmail}}/>
+          <Source num = {++num_entries} source_info = {{name: list[1].listName, email: list[1].listEmail}}/>
+          <Source num = {++num_entries} source_info = {{name: list[2].listName, email: list[2].listEmail}}/>
       </div>
     );
 }
