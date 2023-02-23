@@ -1,6 +1,6 @@
 import Source from "./Source"
 
-function List()
+function List({List, setList}) //need to pass List and setList down to source!!
 {
     let num_entries = 0;
     return(
