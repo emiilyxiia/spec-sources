@@ -1,7 +1,8 @@
-function Source({source_info,num})
+function Source({source_info,num},{list, setList})
 {
     function deleteSource(source){
         //delete logic
+        
       }
     
     return(
