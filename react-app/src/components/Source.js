@@ -1,18 +1,18 @@
-function Source({source_info,num},{list, setList})
+function Source({source_info,num},setter)
 {
-    function deleteSource(source){
-        //delete logic
-        
+    const deleteSource = value => {
+        {setter}(oldValues => {
+          return oldValues.filter(item => item !== value)
+        })
       }
-    
+
     return(
     <div className = "source">
           <span className = "number">{num}</span>
           <span className = "source_name">{source_info.name}</span>
           <span className = "source_email">{source_info.email}</span>
-          <button onClick={() => deleteSource} className = "button" id = "delete" type="button">DELETE</button>
+          <button onClick={() => deleteSource({num})} className = "button" id = "delete" type="button">DELETE</button>
     </div>
-
     )
 }
 
