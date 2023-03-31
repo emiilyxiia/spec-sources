@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import InputForm from "./components/InputForm"
-import List from "./components/List"
+import InputForm from "./components/InputForm";
+import List from "./components/List";
+import data from './server_symlinks/data_link';
+
 
 var initialList = [{listName: "Presbo", listEmail: "presbo@columbia.edu"}, {listName: "John Jay Mouse", listEmail: "mouse@columbia.edu"}, {listName: "Water Bottle Man", listEmail: "flipper@columbia.edu"}]
-
 function App() {
-  const [list, setList] = useState(initialList); 
+  const [list, setList] = useState(data.sources); 
   
   function addSource(source){
     // this is where you will add code to add a source to your list of sources
