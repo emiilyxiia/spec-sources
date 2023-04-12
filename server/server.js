@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 8080;
 
 const routes = require('./routes/routes.js');
 
+const db = require('./models')
+
 app.use(cors()); // Use this after the variable declaration
 
 app.listen(PORT, () => {
