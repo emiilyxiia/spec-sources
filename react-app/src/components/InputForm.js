@@ -1,18 +1,28 @@
-function InputForm({list, SetList, addSource})
+import React, {useState} from 'react';
+
+function InputForm({adder})
 {
+  const [sourceTitle, setSourceTitle] = useState("");
+  const [sourceEmail, setSourceEmail] = useState("");
 
-
-    function addSource(source){
-      // this is where you will add code to add a source to your list of sources
-      
-
-    }
-
+  function submit() 
+  {
+      adder(sourceTitle, sourceEmail)
+      setSourceTitle("");
+      setSourceEmail("");
+      document.getElementById("nameField").value = "";
+      document.getElementById("emailField").value = "";
+  }
+  
     return(
         <div className = "nav__container">
-        <span className = "nav__text">Source Name: <input className = "input_field" type="text"></input></span>
-        <span className = "nav__text">Source Email: <input className = "input_field" type="text"></input></span>
-        <button onClick={() => addSource()} className = "button" id = "add" type="button">ADD</button>
+        <span className = "nav__text">Source Name: <input className = "input_field" type="text" 
+          onChange={(e) => setSourceTitle(e.target.value)} id = "nameField"></input></span>
+
+        <span className = "nav__text">Source Email: <input className = "input_field" type="text" 
+          onChange={(e) => setSourceEmail(e.target.value)} id = "emailField"></input></span>
+
+        <button onClick={() => {submit()}} className = "button" id = "add" type="button">ADD</button>
       </div>
     );
 }
